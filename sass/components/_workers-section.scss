@@ -1,0 +1,70 @@
+.workers {
+    background-color: var(--main-bg-color);
+&__item {
+        background-color: var(--white-text-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__text-wrapper {
+        padding: 30px 0;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        color: var(--title-text-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+    }
+
+    &__profession {
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    &__social-list {
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+        &__social-link {
+            color: rgba(175, 177, 184, 1);
+        }
+    
+        &__social-link {
+            &:hover,
+            &:focus{
+            color: var(--white-text-color);
+            }}
+    
+        &__social-icon {
+            fill: currentColor;
+        }
+}
+
+
+.social-link {
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+        }
+}
+
+/* workers-section end */

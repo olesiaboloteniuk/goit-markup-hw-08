@@ -1,0 +1,33 @@
+/* work-section */
+
+.work {
+    &__item:not(:last-child) {
+            margin-right: 30px;
+        }
+    
+        &__photo-wrapper {
+            position: relative;
+        }
+    
+        &__description {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(47, 48, 58, 0.8);
+        }
+    
+        &__description-style {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--white-text-color);
+        }
+}
+/* work-section end */

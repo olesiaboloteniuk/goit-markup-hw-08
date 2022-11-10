@@ -1,0 +1,29 @@
+/* index preview-section */ 
+
+.preview {
+    &__image-wrapper {
+        max-width: 1600px;
+        padding: 200px 0;
+        margin: 0 auto;
+        background: linear-gradient(#2F303A66, #2F303A66),
+            url("../images/herooptim.jpg"), var(--bg-preview);
+    }
+    &__container {
+            text-align: center;
+        }
+    
+    &__title {
+            max-width: 696px;
+            margin: 0 auto 30px;
+            text-align: center;
+            color: var(--white-text-color);
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.5;
+            letter-spacing: 0.06em;
+            text-decoration: none;
+        }
+}
+
+
+/* preview-section end */
