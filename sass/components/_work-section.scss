@@ -1,6 +1,10 @@
 /* work-section */
 
 .work {
+
+	@media  screen and (max-width: $desc) {
+		display: none;
+	}
     &__item:not(:last-child) {
             margin-right: 30px;
         }

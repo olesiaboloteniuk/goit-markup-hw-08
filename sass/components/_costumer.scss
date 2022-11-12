@@ -2,7 +2,7 @@
 
 .costumer {
     &__list {
-            justify-content: center;
+            flex-wrap: wrap;
             gap: 30px;
         }
     
@@ -10,7 +10,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 170px;
+            width: 100%;
             height: 92px;
             border: 1px solid #AFB1B8;
             border-radius: 4px;
@@ -30,6 +30,18 @@
             fill: currentColor;
     
         }
+
+		&__item{
+			flex-basis: calc((100% - 30px) / 2);
+
+			@media screen and (min-width: $tabl) {
+				flex-basis: calc((100% - 60px)/3);
+			}
+
+			@media screen and (min-width: $desc) {
+				max-width: 170px;
+			}
+		}
 }
 
 /* costumer-section end */

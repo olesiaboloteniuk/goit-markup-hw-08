@@ -3,6 +3,7 @@
     border-bottom: 1px solid #ececec;
 
     &__container {
+        justify-content: space-between;
             align-items: center;
         }
 
@@ -106,5 +107,19 @@
         }
 }
 
+.nav, .contacts {
+    @media  screen and (max-width: $pre-tabl) {
+        display: none;
+    }
+}
+
+.burger {
+    
+    background-color: transparent;
+    border-color: transparent;
+        @media screen and (min-width: $tabl) {
+            display: none;
+            }
+    }
 
 /* header end */

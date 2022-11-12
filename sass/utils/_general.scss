@@ -57,14 +57,31 @@ img {
 
 /* main styles */
 .section {
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @media screen and (min-width: $desc) {
+        padding: 94px 0;
+        }
 }
 
 .container {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
     outline: 1px solid transparent;
+
+    @media  screen and (min-width: $mob) {
+        width: $mob;
+    }
+
+    @media screen and (min-width: $tabl) {
+        width: $tabl;
+
+    }
+    @media screen and (min-width: $desc) {
+        width: $desc;
+        
+    }
 }
 
 .flex-container {
