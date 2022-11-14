@@ -233,6 +233,7 @@
 	&__social-list {
 		display: flex;
 		gap: 10px;
+		flex-wrap: wrap;
 	}
 
 	&__social-item {

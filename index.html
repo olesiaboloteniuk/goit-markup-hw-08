@@ -25,9 +25,9 @@
     <header class="page-header">
       <div class="container page-header__container flex-container">
         <a href="./index.html" class="nav__logo logo">
-          <span class="logo__label">Web</span>Studio</a>
+          <span class="logo__label">Web</span>Studio</a
+        >
         <nav class="nav page-header__nav flex-container">
-          
           <ul class="nav__list flex-container">
             <li class="nav__item">
               <a href="#" class="nav__link nav--current">Studio</a>
@@ -47,13 +47,7 @@
               href="mailto:info@devstudio.com"
               class="contacts__link flex-container"
             >
-              <svg
-                width="16"
-                height="12"
-                class="contacts__icon"
-                width="16"
-                height="12"
-              >
+              <svg width="16" height="12" class="contacts__icon">
                 <use href="./images/iconn.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -69,7 +63,9 @@
           </li>
         </ul>
         <button class="burger js-open-menu">
-          <svg width="40" height="40"><use href="./images/iconn.svg#icon-menu"></use></svg>
+          <svg width="40" height="40">
+            <use href="./images/iconn.svg#icon-menu"></use>
+          </svg>
         </button>
       </div>
     </header>
@@ -192,15 +188,25 @@
           <ul class="work__list flex-container">
             <li class="work__item">
               <div class="work__photo-wrapper">
-				<picture>
-					<source srcset="./images/whatwedo/image-1200.webp 1x,
-					./images/whatwedo/image-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/> 
+                <picture>
+                  <source
+                    srcset="
+                      ./images/whatwedo/image-1200.webp    1x,
+                      ./images/whatwedo/image-1200@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
 
-					<img src="./images/whatwedo/image-1200.jpg 1x, ./images/whatwedo/image-1200@2x.jpg 2x, " alt="">
-				</picture>
-
+                  <img
+                    src="./images/whatwedo/image-1200.jpg"
+                    srcset="
+                      ./images/whatwedo/image-1200.jpg    1x,
+                      ./images/whatwedo/image-1200@2x.jpg 2x
+                    "
+                    alt=""
+                  />
+                </picture>
 
                 <div class="work__description">
                   <p class="work__description-style">Desctop apps</p>
@@ -209,14 +215,25 @@
             </li>
             <li class="work__item">
               <div class="work__photo-wrapper">
-				<picture>
-					<source srcset="./images/whatwedo/image2-1200.webp 1x,
-					./images/whatwedo/image2-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/> 
+                <picture>
+                  <source
+                    srcset="
+                      ./images/whatwedo/image2-1200.webp    1x,
+                      ./images/whatwedo/image2-1200@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
 
-					<img src="./images/whatwedo/image2-1200.jpg 1x, ./images/whatwedo/image2-1200@2x.jpg 2x, " alt="">
-				</picture>
+                  <img
+                    src="./images/whatwedo/image2-1200.jpg"
+                    srcset="
+                      ./images/whatwedo/image2-1200.jpg    1x,
+                      ./images/whatwedo/image2-1200@2x.jpg 2x
+                    "
+                    alt=""
+                  />
+                </picture>
 
                 <div class="work__description">
                   <p class="work__description-style">Mobile apps</p>
@@ -225,14 +242,25 @@
             </li>
             <li class="work__item">
               <div class="work__photo-wrapper">
-             <picture>
-					<source srcset="./images/whatwedo/image3-1200.webp 1x,
-					./images/whatwedo/image3-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/> 
+                <picture>
+                  <source
+                    srcset="
+                      ./images/whatwedo/image3-1200.webp    1x,
+                      ./images/whatwedo/image3-1200@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
 
-					<img src="./images/whatwedo/image3-1200.jpg 1x, ./images/whatwedo/image3-1200@2x.jpg 2x, " alt="">
-				</picture>
+                  <img
+                    src="./images/whatwedo/image3-1200.jpg"
+                    srcset="
+                      ./images/whatwedo/image3-1200.jpg    1x,
+                      ./images/whatwedo/image3-1200@2x.jpg 2x
+                    "
+                    alt=""
+                  />
+                </picture>
 
                 <div class="work__description">
                   <p class="work__description-style">Design solutions</p>
@@ -249,23 +277,42 @@
             <li class="workers__item">
               <div class="workers__picture">
                 <picture>
-					<source srcset="./images/workers/img-480.webp 1x,
-					./images/workers/img-480@2x.webp 2x" 
-					type="image/webp"
-					media="(max-width: 767px)"/> 
+                  <source
+                    srcset="
+                      ./images/workers/img-480.webp    1x,
+                      ./images/workers/img-480@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
 
-					<source srcset="./images/workers/img-1200.webp 1x,
-					./images/workers/img-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/>
+                  <source
+                    srcset="
+                      ./images/workers/img-1200.webp    1x,
+                      ./images/workers/img-1200@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
 
-					<source srcset="./images/workers/img-768.webp 1x,
-					./images/workers/img-768@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 768px)"/>
+                  <source
+                    srcset="
+                      ./images/workers/img-768.webp    1x,
+                      ./images/workers/img-768@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
 
-					<img src="./images/workers/img-1200.jpg 1x, ./images/workers/img-1200.@2x.jpg 2x, " alt="">
-				</picture>
+                  <img
+                    src="./images/workers/img-1200.jpg"
+                    srcset="
+                      ./images/workers/img-1200.jpg     1x,
+                      ./images/workers/img-1200.@2x.jpg 2x
+                    "
+                    alt=""
+                  />
+                </picture>
               </div>
               <div class="workers__text-wrapper">
                 <h3 class="workers__name">Christopher Walker</h3>
@@ -341,24 +388,43 @@
             </li>
             <li class="workers__item">
               <div class="workers__picture">
-             <picture>
-					<source srcset="./images/workers/img2-480.webp 1x,
-					./images/workers/img2-480@2x.webp 2x" 
-					type="image/webp"
-					media="(max-width: 767px)"/> 
+                <picture>
+                  <source
+                    srcset="
+                      ./images/workers/img2-480.webp    1x,
+                      ./images/workers/img2-480@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
 
-					<source srcset="./images/workers/img2-1200.webp 1x,
-					./images/workers/img2-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/>
+                  <source
+                    srcset="
+                      ./images/workers/img2-1200.webp    1x,
+                      ./images/workers/img2-1200@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
 
-					<source srcset="./images/workers/img2-768.webp 1x,
-					./images/workers/img2-768@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 768px)"/>
+                  <source
+                    srcset="
+                      ./images/workers/img2-768.webp    1x,
+                      ./images/workers/img2-768@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
 
-					<img src="./images/workers/img2-1200.jpg 1x, ./images/workers/img2-1200.@2x.jpg 2x, " alt="">
-				</picture>
+                  <img
+                    src="./images/workers/img2-1200.jpg"
+                    srcset="
+                      ./images/workers/img2-1200.jpg     1x,
+                      ./images/workers/img2-1200.@2x.jpg 2x
+                    "
+                    alt=""
+                  />
+                </picture>
               </div>
               <div class="workers__text-wrapper">
                 <h3 class="workers__name">Kylie Evans</h3>
@@ -435,23 +501,42 @@
             <li class="workers__item">
               <div class="workers__picture">
                 <picture>
-					<source srcset="./images/workers/img3-480.webp 1x,
-					./images/workers/img3-480@2x.webp 2x" 
-					type="image/webp"
-					media="(max-width: 767px)"/> 
+                  <source
+                    srcset="
+                      ./images/workers/img3-480.webp    1x,
+                      ./images/workers/img3-480@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
 
-					<source srcset="./images/workers/img3-1200.webp 1x,
-					./images/workers/img3-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/>
+                  <source
+                    srcset="
+                      ./images/workers/img3-1200.webp    1x,
+                      ./images/workers/img3-1200@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
 
-					<source srcset="./images/workers/img3-768.webp 1x,
-					./images/workers/img3-768@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 768px)"/>
+                  <source
+                    srcset="
+                      ./images/workers/img3-768.webp    1x,
+                      ./images/workers/img3-768@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
 
-					<img src="./images/workers/img3-1200.jpg 1x, ./images/workers/img3-1200.@2x.jpg 2x, " alt="">
-				</picture>
+                  <img
+                    src="./images/workers/img3-1200.jpg"
+                    srcset="
+                      ./images/workers/img3-1200.jpg     1x,
+                      ./images/workers/img3-1200.@2x.jpg 2x
+                    "
+                    alt=""
+                  />
+                </picture>
               </div>
               <div class="workers__text-wrapper">
                 <h3 class="workers__name">Ryan Harris</h3>
@@ -527,24 +612,43 @@
             </li>
             <li class="workers__item">
               <div class="workers__picture">
-             <picture>
-					<source srcset="./images/workers/img4-480.webp 1x,
-					./images/workers/img4-480@2x.webp 2x" 
-					type="image/webp"
-					media="(max-width: 767px)"/> 
+                <picture>
+                  <source
+                    srcset="
+                      ./images/workers/img4-480.webp    1x,
+                      ./images/workers/img4-480@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(max-width: 767px)"
+                  />
 
-					<source srcset="./images/workers/img4-1200.webp 1x,
-					./images/workers/img4-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/>
+                  <source
+                    srcset="
+                      ./images/workers/img4-1200.webp    1x,
+                      ./images/workers/img4-1200@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                  />
 
-					<source srcset="./images/workers/img4-768.webp 1x,
-					./images/workers/img4-768@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 768px)"/>
+                  <source
+                    srcset="
+                      ./images/workers/img4-768.webp    1x,
+                      ./images/workers/img4-768@2x.webp 2x
+                    "
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                  />
 
-					<img src="./images/workers/img4-1200.jpg 1x, ./images/workers/img4-1200.@2x.jpg 2x, " alt="">
-				</picture>
+                  <img
+                    src="./images/workers/img4-1200.jpg"
+                    srcset="
+                      ./images/workers/img4-1200.jpg     1x,
+                      ./images/workers/img4-1200.@2x.jpg 2x
+                    "
+                    alt=""
+                  />
+                </picture>
               </div>
               <div class="workers__text-wrapper">
                 <h3 class="workers__name">Tyler Moore</h3>
@@ -828,12 +932,12 @@
             </svg>
           </div>
 
-          <label for="input-email" class="label">Email</label>
+          <label for="input-mail" class="label">Email</label>
           <div class="input__wrapper">
             <input
               type="email"
               name="email"
-              id="input-email"
+              id="input-mail"
               class="input field"
               required
             />

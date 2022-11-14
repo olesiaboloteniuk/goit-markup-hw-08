@@ -13,18 +13,18 @@
     <link rel="stylesheet" href="./css/main.min.css " />
   </head>
   <body>
- <header class="page-header">
+    <header class="page-header">
       <div class="container page-header__container flex-container">
         <a href="./index.html" class="nav__logo logo">
-          <span class="logo__label">Web</span>Studio</a>
+          <span class="logo__label">Web</span>Studio</a
+        >
         <nav class="nav page-header__nav flex-container">
-          
           <ul class="nav__list flex-container">
             <li class="nav__item">
-              <a href="#" class="nav__link nav--current">Studio</a>
+              <a href="./index.html" class="nav__link ">Studio</a>
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link">Portfolio</a>
+              <a href="" class="nav__link nav--current">Portfolio</a>
             </li>
             <li class="nav__item">
               <a href="" class="nav__link">Contacts</a>
@@ -38,13 +38,7 @@
               href="mailto:info@devstudio.com"
               class="contacts__link flex-container"
             >
-              <svg
-                width="16"
-                height="12"
-                class="contacts__icon"
-                width="16"
-                height="12"
-              >
+              <svg width="16" height="12" class="contacts__icon">
                 <use href="./images/iconn.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -60,7 +54,9 @@
           </li>
         </ul>
         <button class="burger js-open-menu">
-          <svg width="40" height="40"><use href="./images/iconn.svg#icon-menu"></use></svg>
+          <svg width="40" height="40">
+            <use href="./images/iconn.svg#icon-menu"></use>
+          </svg>
         </button>
       </div>
     </header>
@@ -97,23 +93,42 @@
               <a href="" class="projects__link">
                 <div class="projects__thumb">
                   <picture>
-					<source srcset="./images/portfolio/img-480.webp 1x,
-					./images/portfolio/img-480@2x.webp 2x" 
-					type="image/webp"
-					media="(max-width: 767px)"/> 
+                    <source
+                      srcset="
+                        ./images/portfolio/img-480.webp 1x,
+                        ./images/portfolio/img-480@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
 
-					<source srcset="./images/portfolio/img-1200.webp 1x,
-					./images/portfolio/img-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img-1200.webp 1x,
+                        ./images/portfolio/img-1200@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
 
-					<source srcset="./images/portfolio/img-768.webp 1x,
-					./images/portfolio/img-768@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 768px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img-768.webp 1x,
+                        ./images/portfolio/img-768@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
 
-					<img src="./images/portfolio/img-1200.jpg 1x, ./images/portfolio/img-1200@2x.jpg 2x " alt="">
-				</picture>
+                    <img
+                      src="./images/portfolio/img-1200.jpg"
+                      srcset="
+                        ./images/portfolio/img-1200.jpg 1x,
+                        ./images/portfolio/img-1200@2x.jpg 2x
+                      "
+                      alt=""
+                    />
+                  </picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -132,24 +147,39 @@
             <li class="projects__element">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                <picture>
-					<source srcset="./images/portfolio/img2-480.webp 1x,
-					./images/portfolio/img2-480@2x.webp 2x" 
-					type="image/webp"
-					media="(max-width: 767px)"/> 
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img2-480.webp 1x,
+                        ./images/portfolio/img2-480@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
 
-					<source srcset="./images/portfolio/img2-1200.webp 1x,
-					./images/portfolio/img2-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img2-1200.webp 1x,
+                        ./images/portfolio/img2-1200@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
 
-					<source srcset="./images/portfolio/img2-768.webp 1x,
-					./images/portfolio/img2-768@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 768px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img2-768.webp 1x,
+                        ./images/portfolio/img2-768@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
 
-					<img src="./images/portfolio/img2-1200.jpg 1x, ./images/portfolio/img2-1200@2x.jpg 2x " alt="">
-				</picture>
+                    <img src="./images/portfolio/img2-1200.jpg"
+                      srcset="./images/portfolio/img2-1200.jpg 1x, ./images/portfolio/img2-1200@2x.jpg 2x "
+                      alt=""
+                    />
+                  </picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -170,24 +200,39 @@
             <li class="projects__element">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                 <picture>
-					<source srcset="./images/portfolio/img3-480.webp 1x,
-					./images/portfolio/img3-480@2x.webp 2x" 
-					type="image/webp"
-					media="(max-width: 767px)"/> 
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img3-480.webp    1x,
+                        ./images/portfolio/img3-480@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
 
-					<source srcset="./images/portfolio/img3-1200.webp 1x,
-					./images/portfolio/img3-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img3-1200.webp    1x,
+                        ./images/portfolio/img3-1200@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
 
-					<source srcset="./images/portfolio/img3-768.webp 1x,
-					./images/portfolio/img3-768@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 768px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img3-768.webp    1x,
+                        ./images/portfolio/img3-768@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
 
-					<img src="./images/portfolio/img3-1200.jpg 1x, ./images/portfolio/img3-1200@2x.jpg 2x " alt="">
-				</picture>
+                    <img src="./images/portfolio/img3-1200.jpg"
+                      srcset="./images/portfolio/img3-1200.jpg 1x, ./images/portfolio/img3-1200@2x.jpg 2x "
+                      alt=""
+                    />
+                  </picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -206,24 +251,39 @@
             <li class="projects__element">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-               <picture>
-					<source srcset="./images/portfolio/img4-480.webp 1x,
-					./images/portfolio/img4-480@2x.webp 2x" 
-					type="image/webp"
-					media="(max-width: 767px)"/> 
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img4-480.webp    1x,
+                        ./images/portfolio/img4-480@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
 
-					<source srcset="./images/portfolio/img4-1200.webp 1x,
-					./images/portfolio/img4-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img4-1200.webp    1x,
+                        ./images/portfolio/img4-1200@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
 
-					<source srcset="./images/portfolio/img4-768.webp 1x,
-					./images/portfolio/img4-768@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 768px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img4-768.webp    1x,
+                        ./images/portfolio/img4-768@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
 
-					<img src="./images/portfolio/img4-1200.jpg 1x, ./images/portfolio/img4-1200@2x.jpg 2x " alt="">
-				</picture>
+                    <img src="./images/portfolio/img4-1200.jpg"
+                      srcset="./images/portfolio/img4-1200.jpg 1x, ./images/portfolio/img4-1200@2x.jpg 2x "
+                      alt=""
+                    />
+                  </picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -242,24 +302,39 @@
             <li class="projects__element">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-              <picture>
-					<source srcset="./images/portfolio/img5-480.webp 1x,
-					./images/portfolio/img5-480@2x.webp 2x" 
-					type="image/webp"
-					media="(max-width: 767px)"/> 
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img5-480.webp    1x,
+                        ./images/portfolio/img5-480@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
 
-					<source srcset="./images/portfolio/img5-1200.webp 1x,
-					./images/portfolio/img5-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img5-1200.webp    1x,
+                        ./images/portfolio/img5-1200@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
 
-					<source srcset="./images/portfolio/img5-768.webp 1x,
-					./images/portfolio/img5-768@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 768px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img5-768.webp    1x,
+                        ./images/portfolio/img5-768@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
 
-					<img src="./images/portfolio/img5-1200.jpg 1x, ./images/portfolio/img5-1200@2x.jpg 2x " alt="">
-				</picture>
+                    <img src="./images/portfolio/img5-1200.jpg"
+                      srcset="./images/portfolio/img5-1200.jpg 1x, ./images/portfolio/img5-1200@2x.jpg 2x "
+                      alt=""
+                    />
+                  </picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -279,23 +354,38 @@
               <a href="" class="projects__link">
                 <div class="projects__thumb">
                   <picture>
-					<source srcset="./images/portfolio/img6-480.webp 1x,
-					./images/portfolio/img6-480@2x.webp 2x" 
-					type="image/webp"
-					media="(max-width: 767px)"/> 
+                    <source
+                      srcset="
+                        ./images/portfolio/img6-480.webp    1x,
+                        ./images/portfolio/img6-480@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
 
-					<source srcset="./images/portfolio/img6-1200.webp 1x,
-					./images/portfolio/img6-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img6-1200.webp    1x,
+                        ./images/portfolio/img6-1200@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
 
-					<source srcset="./images/portfolio/img6-768.webp 1x,
-					./images/portfolio/img6-768@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 768px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img6-768.webp    1x,
+                        ./images/portfolio/img6-768@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
 
-					<img src="./images/portfolio/img6-1200.jpg 1x, ./images/portfolio/img6-1200@2x.jpg 2x " alt="">
-				</picture>
+                    <img src="./images/portfolio/img6-1200.jpg"
+                      srcset="./images/portfolio/img6-1200.jpg 1x, ./images/portfolio/img6-1200@2x.jpg 2x "
+                      alt=""
+                    />
+                  </picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -315,23 +405,38 @@
               <a href="" class="projects__link">
                 <div class="projects__thumb">
                   <picture>
-					<source srcset="./images/portfolio/img7-480.webp 1x,
-					./images/portfolio/img7-480@2x.webp 2x" 
-					type="image/webp"
-					media="(max-width: 767px)"/> 
+                    <source
+                      srcset="
+                        ./images/portfolio/img7-480.webp    1x,
+                        ./images/portfolio/img7-480@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
 
-					<source srcset="./images/portfolio/img7-1200.webp 1x,
-					./images/portfolio/img7-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img7-1200.webp    1x,
+                        ./images/portfolio/img7-1200@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
 
-					<source srcset="./images/portfolio/img7-768.webp 1x,
-					./images/portfolio/img7-768@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 768px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img7-768.webp    1x,
+                        ./images/portfolio/img7-768@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
 
-					<img src="./images/portfolio/img7-1200.jpg 1x, ./images/portfolio/img7-1200@2x.jpg 2x " alt="">
-				</picture>
+                    <img src="/images/portfolio/img7-1200.jpg"
+                      srcset="./images/portfolio/img7-1200.jpg 1x, ./images/portfolio/img7-1200@2x.jpg 2x "
+                      alt=""
+                    />
+                  </picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -351,23 +456,38 @@
               <a href="" class="projects__link">
                 <div class="projects__thumb">
                   <picture>
-					<source srcset="./images/portfolio/img8-480.webp 1x,
-					./images/portfolio/img8-480@2x.webp 2x" 
-					type="image/webp"
-					media="(max-width: 767px)"/> 
+                    <source
+                      srcset="
+                        ./images/portfolio/img8-480.webp    1x,
+                        ./images/portfolio/img8-480@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
 
-					<source srcset="./images/portfolio/img8-1200.webp 1x,
-					./images/portfolio/img8-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img8-1200.webp    1x,
+                        ./images/portfolio/img8-1200@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
 
-					<source srcset="./images/portfolio/img8-768.webp 1x,
-					./images/portfolio/img8-768@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 768px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img8-768.webp    1x,
+                        ./images/portfolio/img8-768@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
 
-					<img src="./images/portfolio/img8-1200.jpg 1x, ./images/portfolio/img8-1200@2x.jpg 2x " alt="">
-				</picture>
+                    <img src="./images/portfolio/img8-1200.jpg"
+                      srcset="./images/portfolio/img8-1200.jpg 1x, ./images/portfolio/img8-1200@2x.jpg 2x "
+                      alt=""
+                    />
+                  </picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -387,23 +507,38 @@
               <a href="" class="projects__link">
                 <div class="projects__thumb">
                   <picture>
-					<source srcset="./images/portfolio/img9-480.webp 1x,
-					./images/portfolio/img9-480@2x.webp 2x" 
-					type="image/webp"
-					media="(max-width: 767px)"/> 
+                    <source
+                      srcset="
+                        ./images/portfolio/img9-480.webp    1x,
+                        ./images/portfolio/img9-480@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
 
-					<source srcset="./images/portfolio/img9-1200.webp 1x,
-					./images/portfolio/img9-1200@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 1200px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img9-1200.webp    1x,
+                        ./images/portfolio/img9-1200@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                    />
 
-					<source srcset="./images/portfolio/img9-768.webp 1x,
-					./images/portfolio/img9-768@2x.webp 2x" 
-					type="image/webp"
-					media="(min-width: 768px)"/>
+                    <source
+                      srcset="
+                        ./images/portfolio/img9-768.webp    1x,
+                        ./images/portfolio/img9-768@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
 
-					<img src="./images/portfolio/img9-1200.jpg 1x, ./images/portfolio/img9-1200@2x.jpg 2x " alt="">
-				</picture>
+                    <img src="./images/portfolio/img9-1200.jpg"
+                      srcset="./images/portfolio/img9-1200.jpg 1x, ./images/portfolio/img9-1200@2x.jpg 2x "
+                      alt=""
+                    />
+                  </picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -423,7 +558,7 @@
         </div>
       </section>
     </main>
-      <footer class="footer">
+    <footer class="footer">
       <div class="footer__container container flex-container">
         <div class="footer__contacts-wrapper">
           <a class="footer__logo logo" href="./index.html">
