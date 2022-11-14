@@ -68,14 +68,58 @@
             </a>
           </li>
         </ul>
-        <button class="burger">
+        <button class="burger js-open-menu">
           <svg width="40" height="40"><use href="./images/iconn.svg#icon-menu"></use></svg>
         </button>
       </div>
     </header>
 
+    <div class="mob-menu js-menu-container">
+      <div class="mob-menu__body">
+        <button class="mob-menu__close js-close-menu">
+          <svg class="mob-menu__icon" width="40" height="40">
+            <use href="./images/iconn.svg#icon-close-1"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu__list">
+          <li><a href="" class="mob-menu__item nav--current">Studio</a></li>
+          <li>
+            <a href="./portfolio.html" class="mob-menu__item">Portfolio</a>
+          </li>
+          <li><a href="" class="mob-menu__item">Contacts</a></li>
+        </ul>
+        <ul class="mob-menu__contacts">
+          <li>
+            <a href="tel:+380961111111" class="mob-menu__phone">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="mob-menu__adrress"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mob-menu__social-list">
+          <li class="mob-menu__social-item">
+            <a href="" class="mob-menu__social-link">Instagram</a>
+          </li>
+          <li class="mob-menu__social-item">
+            <a href="" class="mob-menu__social-link">Twitter</a>
+          </li>
+          <li class="mob-menu__social-item">
+            <a href="" class="mob-menu__social-link">Facebook</a>
+          </li>
+          <li class="mob-menu__social-item">
+            <a href="" class="mob-menu__social-link">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <main>
-      <!-- <section class="preview">
+      <section class="preview">
         <div class="preview__image-wrapper">
           <div class="container preview__container">
             <h1 class="preview__title">
@@ -86,8 +130,8 @@
             </button>
           </div>
         </div>
-      </section> -->
-    <section class="advantages section">
+      </section>
+      <section class="advantages section">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="advantages__list flex-container">
@@ -148,13 +192,15 @@
           <ul class="work__list flex-container">
             <li class="work__item">
               <div class="work__photo-wrapper">
-                <img
-                  class="work__photo"
-                  src="./images/img1.jpg"
-                  alt="work with a computer"
-                  width="370"
-                  height="295"
-                />
+				<picture>
+					<source srcset="./images/whatwedo/image-1200.webp 1x,
+					./images/whatwedo/image-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/> 
+
+					<img src="./images/whatwedo/image-1200.jpg 1x, ./images/whatwedo/image-1200@2x.jpg 2x, " alt="">
+				</picture>
+
 
                 <div class="work__description">
                   <p class="work__description-style">Desctop apps</p>
@@ -163,13 +209,14 @@
             </li>
             <li class="work__item">
               <div class="work__photo-wrapper">
-                <img
-                  class="work__photo"
-                  src="./images/img2.jpg"
-                  alt="work with interface"
-                  width="370"
-                  height="295"
-                />
+				<picture>
+					<source srcset="./images/whatwedo/image2-1200.webp 1x,
+					./images/whatwedo/image2-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/> 
+
+					<img src="./images/whatwedo/image2-1200.jpg 1x, ./images/whatwedo/image2-1200@2x.jpg 2x, " alt="">
+				</picture>
 
                 <div class="work__description">
                   <p class="work__description-style">Mobile apps</p>
@@ -178,13 +225,14 @@
             </li>
             <li class="work__item">
               <div class="work__photo-wrapper">
-                <img
-                  class="work__photo"
-                  src="./images/img3.jpg"
-                  alt="design"
-                  width="370"
-                  height="295"
-                />
+             <picture>
+					<source srcset="./images/whatwedo/image3-1200.webp 1x,
+					./images/whatwedo/image3-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/> 
+
+					<img src="./images/whatwedo/image3-1200.jpg 1x, ./images/whatwedo/image3-1200@2x.jpg 2x, " alt="">
+				</picture>
 
                 <div class="work__description">
                   <p class="work__description-style">Design solutions</p>
@@ -200,12 +248,24 @@
           <ul class="workers__list flex-container">
             <li class="workers__item">
               <div class="workers__picture">
-                <img
-                  src="./images/workers/img(11).jpg"
-                  alt="Christopher Walker"
-                  
-                  
-                />
+                <picture>
+					<source srcset="./images/workers/img-480.webp 1x,
+					./images/workers/img-480@2x.webp 2x" 
+					type="image/webp"
+					media="(max-width: 767px)"/> 
+
+					<source srcset="./images/workers/img-1200.webp 1x,
+					./images/workers/img-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/>
+
+					<source srcset="./images/workers/img-768.webp 1x,
+					./images/workers/img-768@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 768px)"/>
+
+					<img src="./images/workers/img-1200.jpg 1x, ./images/workers/img-1200.@2x.jpg 2x, " alt="">
+				</picture>
               </div>
               <div class="workers__text-wrapper">
                 <h3 class="workers__name">Christopher Walker</h3>
@@ -281,11 +341,24 @@
             </li>
             <li class="workers__item">
               <div class="workers__picture">
-                <img
-                  src="./images/workers/img(12).jpg"
-                  alt="Christopher Walker"
-                 
-                />
+             <picture>
+					<source srcset="./images/workers/img2-480.webp 1x,
+					./images/workers/img2-480@2x.webp 2x" 
+					type="image/webp"
+					media="(max-width: 767px)"/> 
+
+					<source srcset="./images/workers/img2-1200.webp 1x,
+					./images/workers/img2-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/>
+
+					<source srcset="./images/workers/img2-768.webp 1x,
+					./images/workers/img2-768@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 768px)"/>
+
+					<img src="./images/workers/img2-1200.jpg 1x, ./images/workers/img2-1200.@2x.jpg 2x, " alt="">
+				</picture>
               </div>
               <div class="workers__text-wrapper">
                 <h3 class="workers__name">Kylie Evans</h3>
@@ -361,11 +434,24 @@
             </li>
             <li class="workers__item">
               <div class="workers__picture">
-                <img
-                  src="./images/workers/img(13).jpg"
-                  alt="Christopher Walker"
-                
-                />
+                <picture>
+					<source srcset="./images/workers/img3-480.webp 1x,
+					./images/workers/img3-480@2x.webp 2x" 
+					type="image/webp"
+					media="(max-width: 767px)"/> 
+
+					<source srcset="./images/workers/img3-1200.webp 1x,
+					./images/workers/img3-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/>
+
+					<source srcset="./images/workers/img3-768.webp 1x,
+					./images/workers/img3-768@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 768px)"/>
+
+					<img src="./images/workers/img3-1200.jpg 1x, ./images/workers/img3-1200.@2x.jpg 2x, " alt="">
+				</picture>
               </div>
               <div class="workers__text-wrapper">
                 <h3 class="workers__name">Ryan Harris</h3>
@@ -441,11 +527,24 @@
             </li>
             <li class="workers__item">
               <div class="workers__picture">
-                <img
-                  src="./images/workers/img(14).jpg"
-                  alt="Christopher Walker"
-                 
-                />
+             <picture>
+					<source srcset="./images/workers/img4-480.webp 1x,
+					./images/workers/img4-480@2x.webp 2x" 
+					type="image/webp"
+					media="(max-width: 767px)"/> 
+
+					<source srcset="./images/workers/img4-1200.webp 1x,
+					./images/workers/img4-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/>
+
+					<source srcset="./images/workers/img4-768.webp 1x,
+					./images/workers/img4-768@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 768px)"/>
+
+					<img src="./images/workers/img4-1200.jpg 1x, ./images/workers/img4-1200.@2x.jpg 2x, " alt="">
+				</picture>
               </div>
               <div class="workers__text-wrapper">
                 <h3 class="workers__name">Tyler Moore</h3>
@@ -579,28 +678,41 @@
       </section>
     </main>
 
-    <!-- <footer class="footer">
-        <div class="footer__container container flex-container">
+    <footer class="footer">
+      <div class="footer__container container flex-container">
         <div class="footer__contacts-wrapper">
-            <a class="footer__logo logo" href="./index.html">
-                <span class="logo__label">Web</span>Studio </a>
-                <address class="address">
+          <a class="footer__logo logo" href="./index.html">
+            <span class="logo__label">Web</span>Studio
+          </a>
+          <address class="address">
             <ul>
-                <li class="address__item">
-                    <a class="address__street address__link--style" href="695ParkAve,NewYork,NY10065,UnitedStates">695 Park Ave, New York, NY 10065,United States</a>
-                </li>
-                <li class="address__item">
-                    <a class="address__link address__link--style" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="address__item">
-                    <a class="address__link address__link--style" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
+              <li class="address__item">
+                <a
+                  class="address__street address__link--style"
+                  href="695ParkAve,NewYork,NY10065,UnitedStates"
+                  >695 Park Ave, New York, NY 10065,United States</a
+                >
+              </li>
+              <li class="address__item">
+                <a
+                  class="address__link address__link--style"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a
+                  class="address__link address__link--style"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
             </ul>
-                </address>
-            </div>
+          </address>
+        </div>
         <div class="footer__joinbox joinbox">
-                <h3 class="joinbox__title">join</h3>
-                <ul class="joinbox__social-list flex-container">
+          <h3 class="joinbox__title">join</h3>
+          <ul class="joinbox__social-list flex-container">
             <li class="social-item joinbox__social-item">
               <a
                 class="social-link joinbox__social-link flex-container"
@@ -649,29 +761,37 @@
                 </svg>
               </a>
             </li>
-            </ul>
+          </ul>
         </div>
-        
-    <div class="footer__follow-wrapper">
-        <h3 class="joinbox__title">Sign up for the newsletter</h3> 
-      <form class="footer__form flex-container"> <label for="input-email" class="label ">
-            <input type="email"
-                name="email" 
+
+        <div class="footer__follow-wrapper">
+          <h3 class="joinbox__title">Sign up for the newsletter</h3>
+          <form class="footer__form flex-container">
+            <label for="input-email" class="label">
+              <input
+                type="email"
+                name="email"
                 id="input-email"
                 class="input follow__input"
-                placeholder="E-mail"/>
-        </label>
-    
-            <button class="button__accent--theme form-button follow-button" type="submit">Follow
-                <svg class="icon-send" width="24" height="24">
-                <use href="./images/iconn.svg#icon-icon-send"></use>
-            </svg></button>
-          </form>
-    </div>
-</div>
-    </footer> -->
+                placeholder="E-mail"
+              />
+            </label>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+            <button
+              class="button__accent--theme form-button follow-button"
+              type="submit"
+            >
+              Follow
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/iconn.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="modal-close-button">
           <svg class="modal-close-icon" width="18" height="18">
@@ -710,17 +830,17 @@
 
           <label for="input-email" class="label">Email</label>
           <div class="input__wrapper">
-          <input
-            type="email"
-            name="email"
-            id="input-email"
-            class="input field"
-            required
-          />
-              <svg class="input__icon" width="18" height="18">
-                <use href="./images/iconn.svg#icon-email-black"></use>
-          </svg>
-        </div>
+            <input
+              type="email"
+              name="email"
+              id="input-email"
+              class="input field"
+              required
+            />
+            <svg class="input__icon" width="18" height="18">
+              <use href="./images/iconn.svg#icon-email-black"></use>
+            </svg>
+          </div>
           <label for="input-message" class="label">Comment</label>
           <textarea
             name="message"
@@ -732,19 +852,24 @@
             <input type="checkbox" name="check" class="check__input" />
             <span class="check__wrapp">
               <svg class="check__icon" width="16" height="15">
-                <use href="./images/iconn.svg#icon-check"></use>
-              </svg></span> 
+                <use href="./images/iconn.svg#icon-check"></use></svg
+            ></span>
 
-             
-            <span>I agree with the newsletter and accept
-            <a href="#" target="_blank" class="check__link">the Terms of the contract</a></span>
-           
+            <span
+              >I agree with the mailing and accept
+              <a href="#" target="_blank" class="check__link"
+                >the Terms of the contract</a
+              ></span
+            >
           </label>
 
-          <button class="button__accent--theme form-button" type="submit">Send</button>
+          <button class="button__accent--theme form-button" type="submit">
+            Send
+          </button>
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

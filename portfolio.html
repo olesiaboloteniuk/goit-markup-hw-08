@@ -13,18 +13,18 @@
     <link rel="stylesheet" href="./css/main.min.css " />
   </head>
   <body>
-    <header class="page-header">
+ <header class="page-header">
       <div class="container page-header__container flex-container">
+        <a href="./index.html" class="nav__logo logo">
+          <span class="logo__label">Web</span>Studio</a>
         <nav class="nav page-header__nav flex-container">
-          <a href="./index.html" class="nav__logo logo">
-            <span class="logo__label">Web</span>Studio</a
-          >
+          
           <ul class="nav__list flex-container">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link">Studio</a>
+              <a href="#" class="nav__link nav--current">Studio</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link nav--current">Portfolio</a>
+              <a href="./portfolio.html" class="nav__link">Portfolio</a>
             </li>
             <li class="nav__item">
               <a href="" class="nav__link">Contacts</a>
@@ -42,6 +42,8 @@
                 width="16"
                 height="12"
                 class="contacts__icon"
+                width="16"
+                height="12"
               >
                 <use href="./images/iconn.svg#icon-envelope"></use>
               </svg>
@@ -57,6 +59,9 @@
             </a>
           </li>
         </ul>
+        <button class="burger js-open-menu">
+          <svg width="40" height="40"><use href="./images/iconn.svg#icon-menu"></use></svg>
+        </button>
       </div>
     </header>
 
@@ -70,7 +75,9 @@
               <button type="button" class="button__dark--theme">All</button>
             </li>
             <li class="btn__list--element">
-              <button type="button" class="button__dark--theme">Web-sites</button>
+              <button type="button" class="button__dark--theme">
+                Web-sites
+              </button>
             </li>
             <li class="btn__list--element">
               <button type="button" class="button__dark--theme">Apps</button>
@@ -79,7 +86,9 @@
               <button type="button" class="button__dark--theme">Design</button>
             </li>
             <li class="btn__list--element">
-              <button type="button" class="button__dark--theme">Marketing</button>
+              <button type="button" class="button__dark--theme">
+                Marketing
+              </button>
             </li>
           </ul>
 
@@ -87,12 +96,24 @@
             <li class="projects__element">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/portfolio/img11.jpg"
-                    alt="photo project"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+					<source srcset="./images/portfolio/img-480.webp 1x,
+					./images/portfolio/img-480@2x.webp 2x" 
+					type="image/webp"
+					media="(max-width: 767px)"/> 
+
+					<source srcset="./images/portfolio/img-1200.webp 1x,
+					./images/portfolio/img-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/>
+
+					<source srcset="./images/portfolio/img-768.webp 1x,
+					./images/portfolio/img-768@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 768px)"/>
+
+					<img src="./images/portfolio/img-1200.jpg 1x, ./images/portfolio/img-1200@2x.jpg 2x " alt="">
+				</picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -111,12 +132,24 @@
             <li class="projects__element">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/portfolio/img12.jpg"
-                    alt="photo project"
-                    width="370"
-                    height="294"
-                  />
+                <picture>
+					<source srcset="./images/portfolio/img2-480.webp 1x,
+					./images/portfolio/img2-480@2x.webp 2x" 
+					type="image/webp"
+					media="(max-width: 767px)"/> 
+
+					<source srcset="./images/portfolio/img2-1200.webp 1x,
+					./images/portfolio/img2-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/>
+
+					<source srcset="./images/portfolio/img2-768.webp 1x,
+					./images/portfolio/img2-768@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 768px)"/>
+
+					<img src="./images/portfolio/img2-1200.jpg 1x, ./images/portfolio/img2-1200@2x.jpg 2x " alt="">
+				</picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -137,12 +170,24 @@
             <li class="projects__element">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/portfolio/img13.jpg"
-                    alt="photo project"
-                    width="370"
-                    height="294"
-                  />
+                 <picture>
+					<source srcset="./images/portfolio/img3-480.webp 1x,
+					./images/portfolio/img3-480@2x.webp 2x" 
+					type="image/webp"
+					media="(max-width: 767px)"/> 
+
+					<source srcset="./images/portfolio/img3-1200.webp 1x,
+					./images/portfolio/img3-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/>
+
+					<source srcset="./images/portfolio/img3-768.webp 1x,
+					./images/portfolio/img3-768@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 768px)"/>
+
+					<img src="./images/portfolio/img3-1200.jpg 1x, ./images/portfolio/img3-1200@2x.jpg 2x " alt="">
+				</picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -161,12 +206,24 @@
             <li class="projects__element">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/portfolio/img21.jpg"
-                    alt="photo project"
-                    width="370"
-                    height="294"
-                  />
+               <picture>
+					<source srcset="./images/portfolio/img4-480.webp 1x,
+					./images/portfolio/img4-480@2x.webp 2x" 
+					type="image/webp"
+					media="(max-width: 767px)"/> 
+
+					<source srcset="./images/portfolio/img4-1200.webp 1x,
+					./images/portfolio/img4-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/>
+
+					<source srcset="./images/portfolio/img4-768.webp 1x,
+					./images/portfolio/img4-768@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 768px)"/>
+
+					<img src="./images/portfolio/img4-1200.jpg 1x, ./images/portfolio/img4-1200@2x.jpg 2x " alt="">
+				</picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -185,12 +242,24 @@
             <li class="projects__element">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/portfolio/img22.jpg"
-                    alt="photo project"
-                    width="370"
-                    height="294"
-                  />
+              <picture>
+					<source srcset="./images/portfolio/img5-480.webp 1x,
+					./images/portfolio/img5-480@2x.webp 2x" 
+					type="image/webp"
+					media="(max-width: 767px)"/> 
+
+					<source srcset="./images/portfolio/img5-1200.webp 1x,
+					./images/portfolio/img5-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/>
+
+					<source srcset="./images/portfolio/img5-768.webp 1x,
+					./images/portfolio/img5-768@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 768px)"/>
+
+					<img src="./images/portfolio/img5-1200.jpg 1x, ./images/portfolio/img5-1200@2x.jpg 2x " alt="">
+				</picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -209,12 +278,24 @@
             <li class="projects__element">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/portfolio/img23.jpg"
-                    alt="photo project"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+					<source srcset="./images/portfolio/img6-480.webp 1x,
+					./images/portfolio/img6-480@2x.webp 2x" 
+					type="image/webp"
+					media="(max-width: 767px)"/> 
+
+					<source srcset="./images/portfolio/img6-1200.webp 1x,
+					./images/portfolio/img6-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/>
+
+					<source srcset="./images/portfolio/img6-768.webp 1x,
+					./images/portfolio/img6-768@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 768px)"/>
+
+					<img src="./images/portfolio/img6-1200.jpg 1x, ./images/portfolio/img6-1200@2x.jpg 2x " alt="">
+				</picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -233,12 +314,24 @@
             <li class="projects__element">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/portfolio/img32.jpg"
-                    alt="photo project"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+					<source srcset="./images/portfolio/img7-480.webp 1x,
+					./images/portfolio/img7-480@2x.webp 2x" 
+					type="image/webp"
+					media="(max-width: 767px)"/> 
+
+					<source srcset="./images/portfolio/img7-1200.webp 1x,
+					./images/portfolio/img7-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/>
+
+					<source srcset="./images/portfolio/img7-768.webp 1x,
+					./images/portfolio/img7-768@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 768px)"/>
+
+					<img src="./images/portfolio/img7-1200.jpg 1x, ./images/portfolio/img7-1200@2x.jpg 2x " alt="">
+				</picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -257,12 +350,24 @@
             <li class="projects__element">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/portfolio/img31.jpg"
-                    alt="photo project"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+					<source srcset="./images/portfolio/img8-480.webp 1x,
+					./images/portfolio/img8-480@2x.webp 2x" 
+					type="image/webp"
+					media="(max-width: 767px)"/> 
+
+					<source srcset="./images/portfolio/img8-1200.webp 1x,
+					./images/portfolio/img8-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/>
+
+					<source srcset="./images/portfolio/img8-768.webp 1x,
+					./images/portfolio/img8-768@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 768px)"/>
+
+					<img src="./images/portfolio/img8-1200.jpg 1x, ./images/portfolio/img8-1200@2x.jpg 2x " alt="">
+				</picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -281,12 +386,24 @@
             <li class="projects__element">
               <a href="" class="projects__link">
                 <div class="projects__thumb">
-                  <img
-                    src="./images/portfolio/img33.jpg"
-                    alt="photo project"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+					<source srcset="./images/portfolio/img9-480.webp 1x,
+					./images/portfolio/img9-480@2x.webp 2x" 
+					type="image/webp"
+					media="(max-width: 767px)"/> 
+
+					<source srcset="./images/portfolio/img9-1200.webp 1x,
+					./images/portfolio/img9-1200@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 1200px)"/>
+
+					<source srcset="./images/portfolio/img9-768.webp 1x,
+					./images/portfolio/img9-768@2x.webp 2x" 
+					type="image/webp"
+					media="(min-width: 768px)"/>
+
+					<img src="./images/portfolio/img9-1200.jpg 1x, ./images/portfolio/img9-1200@2x.jpg 2x " alt="">
+				</picture>
                   <div class="projects__text--box">
                     <p class="projects__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -306,22 +423,34 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+      <footer class="footer">
       <div class="footer__container container flex-container">
         <div class="footer__contacts-wrapper">
           <a class="footer__logo logo" href="./index.html">
-            <span class="logo__label">Web</span>Studio </a>
+            <span class="logo__label">Web</span>Studio
+          </a>
           <address class="address">
             <ul>
               <li class="address__item">
-                <a class="address__street address__link--style" href="695ParkAve,NewYork,NY10065,UnitedStates">695 Park Ave,
-                  New York, NY 10065,United States</a>
+                <a
+                  class="address__street address__link--style"
+                  href="695ParkAve,NewYork,NY10065,UnitedStates"
+                  >695 Park Ave, New York, NY 10065,United States</a
+                >
               </li>
               <li class="address__item">
-                <a class="address__link address__link--style" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a
+                  class="address__link address__link--style"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="address__item">
-                <a class="address__link address__link--style" href="tel:+380961111111">+38 096 111 11 11</a>
+                <a
+                  class="address__link address__link--style"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -330,28 +459,48 @@
           <h3 class="joinbox__title">join</h3>
           <ul class="joinbox__social-list flex-container">
             <li class="social-item joinbox__social-item">
-              <a class="social-link joinbox__social-link flex-container" href="#" target="_blank" aria-label="instagram">
+              <a
+                class="social-link joinbox__social-link flex-container"
+                href="#"
+                target="_blank"
+                aria-label="instagram"
+              >
                 <svg class="joinbox__social-icon" width="20" height="20">
                   <use href="./images/iconn.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item joinbox__social-item">
-              <a class="social-link joinbox__social-link flex-container" href="#" target="_blank" aria-label="twitter">
+              <a
+                class="social-link joinbox__social-link flex-container"
+                href="#"
+                target="_blank"
+                aria-label="twitter"
+              >
                 <svg class="joinbox__social-icon" width="20" height="20">
                   <use href="./images/iconn.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item joinbox__social-item">
-              <a class="social-link joinbox__social-link flex-container" href="#" target="_blank" aria-label="facebook">
+              <a
+                class="social-link joinbox__social-link flex-container"
+                href="#"
+                target="_blank"
+                aria-label="facebook"
+              >
                 <svg class="joinbox__social-icon" width="20" height="20">
                   <use href="./images/iconn.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item joinbox__social-item">
-              <a class="social-link joinbox__social-link flex-container" href="#" target="_blank" aria-label="linkedin">
+              <a
+                class="social-link joinbox__social-link flex-container"
+                href="#"
+                target="_blank"
+                aria-label="linkedin"
+              >
                 <svg class="joinbox__social-icon" width="20" height="20">
                   <use href="./images/iconn.svg#icon-linkedin"></use>
                 </svg>
@@ -359,19 +508,30 @@
             </li>
           </ul>
         </div>
-    
+
         <div class="footer__follow-wrapper">
           <h3 class="joinbox__title">Sign up for the newsletter</h3>
           <form class="footer__form flex-container">
-             <label for="input-email" class="label ">
-              <input type="email" name="email" id="input-email" class="input follow__input" placeholder="E-mail" />
+            <label for="input-email" class="label">
+              <input
+                type="email"
+                name="email"
+                id="input-email"
+                class="input follow__input"
+                placeholder="E-mail"
+              />
             </label>
-    
-            <button class="button__accent--theme form-button follow-button" type="submit">Follow
+
+            <button
+              class="button__accent--theme form-button follow-button"
+              type="submit"
+            >
+              Follow
               <svg class="icon-send" width="24" height="24">
                 <use href="./images/iconn.svg#icon-icon-send"></use>
-              </svg></button>
-            </form>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

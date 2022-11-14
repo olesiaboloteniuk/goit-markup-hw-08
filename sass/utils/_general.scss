@@ -65,21 +65,18 @@ img {
 }
 
 .container {
-    width: 100%;
+    max-width: 480px;
     margin: 0 auto;
     padding: 0 15px;
     outline: 1px solid transparent;
 
-    @media  screen and (min-width: $mob) {
-        width: $mob;
-    }
 
     @media screen and (min-width: $tabl) {
-        width: $tabl;
+        max-width: $tabl;
 
     }
     @media screen and (min-width: $desc) {
-        width: $desc;
+        max-width: $desc;
         
     }
 }
@@ -92,10 +89,14 @@ img {
     margin-bottom: 50px;
     color: var(--title-text-color);
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.178;
     text-align: center;
-}
+	@media screen and (min-width: $desc) {
+	font-size: 36px;
+    line-height: 1.17;
+	}
+} 
 
 .visually-hidden {
     position: absolute;

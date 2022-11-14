@@ -1,29 +1,59 @@
-/* index preview-section */ 
+/* index preview-section */
 
 .preview {
-    &__image-wrapper {
-        max-width: 1600px;
-        padding: 200px 0;
-        margin: 0 auto;
-        background: linear-gradient(#2F303A66, #2F303A66),
-            url("../images/herooptim.jpg"), var(--bg-preview);
-    }
-    &__container {
-            text-align: center;
-        }
-    
-    &__title {
-            max-width: 696px;
-            margin: 0 auto 30px;
-            text-align: center;
-            color: var(--white-text-color);
-            font-weight: 900;
-            font-size: 44px;
-            line-height: 1.5;
-            letter-spacing: 0.06em;
-            text-decoration: none;
-        }
-}
+	&__image-wrapper {
+		padding: 118px 0;
+		margin: 0 auto;
+		max-width: 480px;
+		background: linear-gradient(#2f303a66, #2f303a66), url("../images/header-img-480.jpg") no-repeat center/cover,
+			var(--bg-preview);
 
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background: linear-gradient(#2f303a66, #2f303a66),
+				url("../images/header-img-480@2x.jpg") no-repeat center/cover, var(--bg-preview);
+		}
+		@media screen and (min-width: $tabl) {
+			max-width: 768px;
+			background: linear-gradient(#2f303a66, #2f303a66),
+				url("../images/header-img-768.jpg") no-repeat center/cover, var(--bg-preview);
+			@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+				background: linear-gradient(#2f303a66, #2f303a66),
+					url("../images/header-img-768@2x.jpg") no-repeat center/cover, var(--bg-preview);
+			}
+		}
+
+		@media screen and (min-width: $desc) {
+			max-width: 1600px;
+			padding: 200px 0;
+			background: linear-gradient(#2f303a66, #2f303a66),
+				url("../images/header-img-1200.jpg") no-repeat center/cover, var(--bg-preview);
+			@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+				background: linear-gradient(#2f303a66, #2f303a66),
+					url("../images/header-img-1200@2x.jpg") no-repeat center/cover, var(--bg-preview);
+			}
+		}
+	}
+	&__container {
+		text-align: center;
+	}
+
+	&__title {
+		max-width: 360px;
+		margin: 0 auto 30px;
+		text-align: center;
+		color: var(--white-text-color);
+		font-weight: 900;
+		font-size: 26px;
+		line-height: 42px;
+		letter-spacing: 0.06em;
+		text-decoration: none;
+
+		@media screen and (min-width: $desc) {
+			max-width: 696px;
+			font-size: 44px;
+			line-height: 1.5;
+		}
+	}
+}
 
 /* preview-section end */
